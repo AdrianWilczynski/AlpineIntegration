@@ -1,0 +1,10 @@
+﻿@page "/"
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div x-data.serialize="@(new SampleModel { Title = "Sample", Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit."})">
+    <h1 x-text="title"></h1>
+    <p x-text="description"></p>
+</div>
